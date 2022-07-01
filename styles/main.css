@@ -15,3 +15,19 @@ p {
   
 }
 
+header button {
+background-color: rgb(62, 101, 108);
+border: #555;
+color: white;
+padding: 24px 48px;
+text-align: center;
+font-size: medium;
+margin: 8px 2px;
+transition-duration: 40ms;
+cursor: pointer;
+}
+
+header button:hover {
+  background-color: blanchedalmond;
+  color: chartreuse;
+}
