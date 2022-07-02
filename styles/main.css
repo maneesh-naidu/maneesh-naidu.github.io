@@ -14,8 +14,26 @@ p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   
 }
+/* background color change for small devices*/
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: aqua;
+    color: black;
+  }
+  p {
+    color: black;
+  }
+}
+
+
+
 header {
   padding: 30px 2px 10px 0px;
+  background-image: url("../images/Fires-wallpaper.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  height: 38px;
+  background-size: 100%;
 }
 header a {
   background-color: rgb(62, 101, 108);
@@ -36,4 +54,11 @@ header a {
 header a:hover {
   background-color: rgb(62, 212, 149);
   color: rgb(0, 0, 0);
+}
+
+.displaypic {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
