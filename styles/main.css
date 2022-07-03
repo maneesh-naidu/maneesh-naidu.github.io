@@ -1,7 +1,7 @@
 .titlebox {
   background-color: rgb(62, 101, 108);
   color:rgb(103, 186, 242);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Kumar One', cursive;
   text-align: center;
 }
 
@@ -27,8 +27,40 @@ footer a {
   font-weight: 600;
   font-size: larger;
 }
-.titlebox {
+.randomtext {
+  font-family: 'Titillium Web', sans-serif;
+  font-style: italic;
+}
+header {
+  padding: 5px;
+  background-image: url("../images/Fires-wallpaper.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  height: 70px;
+  background-size: 100%;
+  display: block;
+}
+header a {
+  background-color: rgb(62, 101, 108);
+  border: #555;
+  border-radius: 8px;
+  color: chartreuse;
+  padding: 24px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: small;
   font-family: 'Kumar One', cursive;
+  margin: 0 3px 2px 0;
+  transition-duration: 40ms;
+  cursor: pointer;
+  width: 19.5%;
+  min-width: 140px;
+  float: left;
+}
+
+header a:hover {
+  background-color: rgb(62, 212, 149);
+  color: rgb(0, 0, 0);
 }
 /* changes for small devices*/
 @media only screen and (max-width: 320px) {
@@ -39,6 +71,7 @@ footer a {
   p {
     color: black;
   }
+
 }
 /* changes for tablet size devices */
 @media only screen and (min-width: 768px) {
@@ -49,6 +82,7 @@ footer a {
   p {
     color: black;
   }
+
 }
 /* changes for higher ppi devices */
 @media only screen and (min-width: 1440px) {
@@ -60,40 +94,32 @@ footer a {
     color: black;
   }
 }
-header {
-  padding: 30px 2px 10px 0px;
-  background-image: url("../images/Fires-wallpaper.jpg");
-  background-color: #cccccc;
-  background-position: center;
-  height: 38px;
-  background-size: 100%;
-}
-header a {
-  background-color: rgb(62, 101, 108);
-  border: #555;
-  border-radius: 8px;
-  color: chartreuse;
-  padding: 24px 48px;
-  text-align: center;
-  text-decoration: none;
-  font-size: small;
-  font-family: 'Kumar One', cursive;
-  margin: 0 5px 0 0;
-  transition-duration: 40ms;
-  cursor: pointer;
-  width: 22%;
-  min-width: 250px;
+
+
+
+@media only screen and (max-width: 967px) {
+  header {
+    height: 140px;
+  }
 }
 
-header a:hover {
-  background-color: rgb(62, 212, 149);
-  color: rgb(0, 0, 0);
+@media only screen and (max-width: 420px) {
+  header {
+    height: 290px;
+  }
 }
+
+/*@media only screen and (min-width: 421px) {
+  header {
+    height: 140px;
+  }
+}*/
 
 .displaypic {
   width: 50%;
-  display: block;
-  margin-left: auto;
+  /*display: block;*/
+  margin-left: 10px;
   margin-right: auto;
   border-radius: 8px;
+  float: right;
 }
