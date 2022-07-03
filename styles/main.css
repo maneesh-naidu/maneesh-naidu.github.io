@@ -1,7 +1,8 @@
 .titlebox {
   background-color: rgb(62, 101, 108);
-  color:chartreuse;
+  color:rgb(103, 186, 242);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 body {
@@ -11,11 +12,26 @@ body {
 
 p {
   color:salmon;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   
 }
-/* background color change for small devices*/
-@media only screen and (max-width: 768px) {
+
+footer a {
+  text-decoration: none;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.mostrecent a {
+  text-decoration: none;
+  font-family: 'Splash', cursive;
+  font-weight: 600;
+  font-size: larger;
+}
+.titlebox {
+  font-family: 'Kumar One', cursive;
+}
+/* changes for small devices*/
+@media only screen and (max-width: 320px) {
   body {
     background-color: aqua;
     color: black;
@@ -24,9 +40,26 @@ p {
     color: black;
   }
 }
-
-
-
+/* changes for tablet size devices */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: rgb(238, 170, 220);
+    color: black;
+  }
+  p {
+    color: black;
+  }
+}
+/* changes for higher ppi devices */
+@media only screen and (min-width: 1440px) {
+  body {
+    background-color: rgb(191, 220, 94);
+    color: black;
+  }
+  p {
+    color: black;
+  }
+}
 header {
   padding: 30px 2px 10px 0px;
   background-image: url("../images/Fires-wallpaper.jpg");
@@ -43,7 +76,8 @@ header a {
   padding: 24px 48px;
   text-align: center;
   text-decoration: none;
-  font-size: medium;
+  font-size: small;
+  font-family: 'Kumar One', cursive;
   margin: 0 5px 0 0;
   transition-duration: 40ms;
   cursor: pointer;
@@ -61,4 +95,5 @@ header a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 8px;
 }
