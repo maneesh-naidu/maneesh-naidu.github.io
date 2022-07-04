@@ -168,3 +168,11 @@ header a:hover {
   border-radius: 8px;
   float: right;
 }
+.examplecode {
+  width: 75%;
+  padding-top: 5px;
+  margin-left: 4px;
+  margin-right: auto;
+  border-radius: 8px;
+  float: inline-end;
+}
