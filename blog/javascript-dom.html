@@ -7,9 +7,45 @@
         <link href="../styles/main.css" rel="stylesheet" type="text/css">
         <title>Javascript DOM</title>
     </head>
+    <header>
+      <a href="../index.html">Home</a>
+      <a href="../blog.html">Blog</a>
+      <a href="../current.html">Current Projects</a>
+      <a href="../about.html">About Me</a>
+    </header>
+
     <body>
       <h1>An introduction to DOM</h1>
-      
-        
+      <p>The purpose of this article is to introduce the Document Object Model (or DOM) and how it relates to JavaScript and its interactions with HTML and CSS.</p>
+      <p>Before we delve further into the DOM, lets discuss how JavaScript, HTML and CSS work together. I like to think of this in the context of a film. You have your script (HTML) which contains the content of the film, you have a costume/stage department (CSS) who are in charge of the look/feel of the actors and the set, and finally, you have the cool kids: the special effects department (JavaScript) who have the ability to add graphics, animations, styles, and even completely replace elements (pun intended) of the film with brand new frames.</p>
+      <h3>Control Flow and Loops</h3>
+      <p>The Control Flow is simply the order in which the system executes statements in a script. Code will run in order from the start to the finish unless it is asked to change the control flow by a command structure such as a conditional or a loop. There are 5 main types of command structures that allows this sort of manipulation</p>
+      <h4>Conditional Statements</h4>
+      <ul>
+        <li>if statements</li>
+        <li>if.. <strong>else.. </strong>statements</li>
+      </ul>
+      <h4>Looping Statements</h4>
+      <ul>
+        <li>while loops</li>
+        <li>do.. while loops</li>
+      </ul>
+      <h4>switch statements</h4>
+      <h4>label statements</h4>
+      <h4>with statements</h4>
+      <p>If I were to liken this to an everyday activity, I would compare this to washing your car. Simply deciding whether or not to wash the car is a simple example of an: <strong>IF</strong> statement. For example, IF the car is dirty, we should wash it, otherwise we dont.</p>
+      <p>In terms of loops, if we use the same analogy of washing a car, we could think of this as the control process to decide when to stop scrubbing the wheels for example. The 3 main components we need to complete the loop setup include a start point, an end point, and what to do at the end of each loop, you can then define what actions are taken whilst inside that loop (with the exception of a while loop, which only has 1 conditional requirement).</p>
+      <p></p>
+      <h3>The Document Object Model (DOM)</h3>
+      <p>The DOM can be thought of as a way of categorising the structure of elements of a webpage into objects that are then accessible by JavaScript. These objects can then be modified via code in Javascript which will allow for dynamic changes to a website without the need to refresh the page. This can be visualised by thinking of the dependencies between different elements like a family tree, where there are parent and child elements, descending from a start point (which in the case of DOM is usually <strong>window</strong>).</p>
+      <p>The <em>Document</em> portion of this tree sits one level below Window and gives us the gateway we need to access any child elements.</p>
+      <p>To understand how this can be valuable, think about how powerful the ability is to not only access a portion of a website, but modify it according to user inputs, or login status, or even based on the position of a users mouse (plus many more variables!). The developer can even incorporate complex functions that modify multiple elements on a page, completely changing what is seen/experienced by the user.</p>
+      <p>An example of how you could interact with the DOM is as follows: Say you have a website that caters for both dog lovers and cat lovers, we could alter how the page appears (whether that's with a puppy background, or in an ecommerce focus, we could populate a set area of the page to display dog/cat related items) to the logged in user without changing the <em>structure</em> of the HTML code.</p>
+      <h3>Arrays vs Objects</h3>
+      <p>Within Javascript, it is common practice to store information in a list format, this is usually achieved using an array, which is accessed via it's numerical index position (starting from 0) Arrays can store multiple types of values, such as strings, numbers, boolean etc.</p>
+      <p>Objects are quite similar to Arrays in that they store information in a list or table format, however, objects are known as key value pairs, where the value is accessed using the "key" of that given value. Objects can be indexed like an array, where the key is used as the index.</p>
+      <h3>Functions</h3>
+      <p>Functions give us the ability to program a set of instructions that can then be called upon as many times as required within the code. This is particularly useful where certain actions are required to be used multiple times within one document.</p>
+      <p>There are 2 parts to a function, defining it, and calling it. <em>Defining</em> the function tells the system what instructions are to be carried out, and <em>calling</em> the function tells the system to execute that set of instructions.</p>
     </body>
 </html>
